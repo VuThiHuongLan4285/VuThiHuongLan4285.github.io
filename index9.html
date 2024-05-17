@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân</title>
+ <style>
+        /* CSS ở đây */
+        body {
+            background-image: url('path_to_your_background_image.jpg'); /* Đường dẫn đến hình nền */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Giữ hình nền cố định */
+            margin: 0;
+            padding: 0;
+        }
+
+        .change-background-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Hồng đậm */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('path_to_your_background_image.jpg'); /* Đường dẫn đến hình nền */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Giữ hình nền cố định */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #ff69b4; /* Hồng đậm */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #333;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .section-title {
+            background-color: #009933; /* Xanh cổ vịt */
+            color: #333;
+            padding: 10px;
+            border-bottom: 2px solid #333;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            padding: 20px;
+            background-color: #fff0f5; /* Hồng phấn nhạt */
+            border: 1px solid #ddd;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #ffeb3b; /* Vàng */
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 5px solid #333;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .upload-btn {
+            background-color: #4CAF50; /* Màu xanh lá */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .add-product-btn {
+            background-color: #008CBA; /* Màu xanh dương */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .avatar-container {
+            width: 4cm;
+            height: 6cm;
+            border: 2mm solid #8B008B; /* Viền màu tím đậm, chiều dày 2mm */
+            border-radius: 5px; /* Để làm tròn góc */
+            overflow: hidden; /* Để ảnh không vượt ra ngoài viền */
+        }
+
+        .avatar-container img {
+            width: 100%; /* 100% chiều rộng để ảnh đầy đủ kích thước */
+            height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ của ảnh */
+        }
+        .cover-photo {
+            width: 100%; /* Chiều rộng bằng chiều rộng của trang */
+            height: 8cm; /* Chiều cao là 8cm */
+            overflow: hidden; /* Ẩn phần vượt quá kích thước */
+        }
+
+        .cover-photo img {
+            width: 100%; /* 100% chiều rộng để ảnh đầy đủ kích thước */
+            height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ của ảnh */
+        }
+
+        .change-background-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Hồng đậm */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang cá nhân của [Vu Thi Huong Lan]</h1>
+    </header>
+    <div class="container">
+<!-- Phần ảnh đại diện -->
+        <section>
+            <div class="section-title">
+                <h2>Ảnh đại diện</h2>
+            </div>
+            <div class="section-content avatar-container">
+                <img src="path_to_your_avatar_image.jpg" alt="Avatar">
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Ảnh bìa</h2>
+            </div>
+            <div class="section-content cover-photo">
+                <img src="path_to_your_cover_photo.jpg" alt="Cover Photo">
+            </div>
+        </section>
+         <section>
+            <div class="section-title">
+                <h2>Giới thiệu bản thân</h2>
+            </div>
+            <div class="section-content">
+                <p>Xin chào! Tôi là Vũ Thị Hương Lan, một cô gái năng động, sáng tạo và tràn đầy năng lượng tích cực. Với tinh thần vui vẻ và hòa đồng, tôi luôn dễ dàng kết nối và tạo ra những mối quan hệ tốt đẹp xung quanh mình. Tôi là người mơ mộng và độc lập, luôn theo đuổi những khát vọng và đam mê của mình.</p>
+                <p>Tôi yêu thích đọc sách, du lịch và nấu ăn. Mỗi trang sách mở ra cho tôi những chân trời mới, mỗi chuyến đi là cơ hội khám phá và mỗi bữa ăn là niềm vui được chia sẻ với người thân yêu.</p>
+                <p>Với tình yêu quê hương sâu sắc, tôi mong muốn cống hiến cho sự phát triển của Việt Nam và góp phần vào nền hòa bình thế giới. Hãy cùng tôi khám phá và trân trọng vẻ đẹp của cuộc sống qua những hành trình đầy màu sắc và ý nghĩa!</p>
+                <p>Tôi là cô gái tràn đầy năng lượng,
+Sáng tạo, mộng mơ, độc lập đường xa,
+Vui vẻ, hòa đồng, cuộc sống chan hòa,
+Khát vọng cống hiến, quê hương luôn nhớ.
+
+Trang sách mở ra, tri thức bao la,
+Thế giới muôn màu qua từng trang viết,
+Du lịch, nấu ăn, những niềm vui khắng khít,
+Mỗi chuyến đi xa, mỗi bữa cơm nhà.
+
+Việt Nam yêu dấu, lòng tôi khao khát,
+Cống hiến mỗi ngày, vì nước vì dân,
+Hòa bình thế giới, giấc mơ trong ngần,
+Góp phần nhỏ bé, làm nên tương lai.
+
+Đồng bằng sông nước, biển xanh bát ngát,
+Núi rừng hùng vĩ, đất nước tươi xinh,
+Từng nơi tôi đến, chân trời rộng mở,
+Gửi gắm tình yêu qua những bước chân.
+
+Hãy cùng tôi nhé, bạn ơi ta bước,
+Khám phá cuộc đời, chan chứa niềm vui,
+Trân trọng vẻ đẹp, cuộc sống tuyệt vời,
+Qua từng hành trình, sắc màu yêu thương.</p>
+                <!-- Thêm các đầu mục mới -->
+                <h3>Sở thích:</h3>
+                <p>Đọc sách, du lịch, nấu ăn,...</p>
+
+                <h3>Sở trường:</h3>
+                <p>Giao tiếp, sáng tạo, thiết kế đồ họa, thiết kế ảnh và video Panorama...</p>
+
+                <h3>Sở đoản:</h3>
+                <p>Không thích sự giả dối,...</p>
+
+                <h3>Thể loại Âm nhạc:</h3>
+                <p>Pop, Rock, Ballad,...</p>
+
+                <h3>Văn học nghệ thuật:</h3>
+                <p> Sáng tác thơ, Tiểu thuyết, kịch bản phim,...</p>
+
+                <h3>Phim ảnh:</h3>
+                <p>Hành động, Lãng mạn, Hài hước,...</p>
+
+                <h3>Thần tượng:</h3>
+                <p>Cellidion, Taylor Swift, Vincent Van Gogh,...</p>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Kỹ năng</h2>
+            </div>
+            <div class="section-content">
+                <ul id="list-ky-nang">
+                    <li>Kỹ năng giao tiếp xuất sắc</li>
+                    <li>Kỹ năng sản xuất ảnh và video Panorama</li>
+                    <li>Sáng tạo và thiết kế đồ họa 3D</li>
+                    <li>Viết lách và biên tập nội dung</li>
+                    <li>Kỹ năng nấu ăn chuyên nghiệp</li>
+                    <!-- Các kỹ năng sẽ được thêm bằng JavaScript -->
+                </ul>
+                <button onclick="themKyNang()">Thêm kỹ năng mới</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Các tác phẩm đã sáng tác</h2>
+            </div>
+            <div class="section-content">
+                <div>
+                    <h3>Tác phẩm thơ</h3>
+                    <ul id="list-tho">
+                        <li>Du lịch Việt Nam qua thơ. Phần 1: Du lịch Hà Nội Qua thơ</li>
+                        <li>Du lịch Việt Nam qua thơ. Phần 2: Các trò chơi dân gian trong lễ hội ở Việt Nam</li>
+                        <!-- Các tác phẩm thơ sẽ được thêm bằng JavaScript -->
+                    </ul>
+                    <button onclick="themTacPham('tho')">Thêm tác phẩm mới</button>
+                </div>
+                <div>
+                    <h3>Tác phẩm âm nhạc</h3>
+                    <ul id="list-am-nhac">
+                        <li>Tác phẩm 1</li>
+                        <li>Tác phẩm 2</li>
+                        <!-- Các tác phẩm âm nhạc sẽ được thêm bằng JavaScript -->
+                    </ul>
+                    <button onclick="themTacPham('am-nhac')">Thêm tác phẩm mới</button>
+                </div>
+                <div>
+                    <h3>Kịch bản phim</h3>
+                    <ul id="list-kich-ban">
+                        <li>Tác phẩm 1</li>
+                        <li>Tác phẩm 2</li>
+                        <!-- Các kịch bản phim sẽ được thêm bằng JavaScript -->
+                    </ul>
+                    <button onclick="themTacPham('kich-ban')">Thêm tác phẩm mới</button>
+                </div>
+                <!-- Thêm các thể loại tác phẩm khác tại đây -->
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Kinh nghiệm làm việc</h2>
+            </div>
+            <div class="section-content" contenteditable="true">
+                <!-- Người dùng có thể nhập nội dung về kinh nghiệm làm việc vào đây -->
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Học vấn</h2>
+            </div>
+            <div class="section-content" contenteditable="true">
+                <!-- Người dùng có thể nhập nội dung về học vấn vào đây -->
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Liên hệ</h2>
+            </div>
+            <div class="section-content" contenteditable="true">
+                <!-- Người dùng có thể nhập nội dung về liên hệ vào đây -->
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Địa chỉ các trang mạng xã hội</h2>
+            </div>
+            <div class="section-content social-links" contenteditable="true">
+                <!-- Người dùng có thể nhập địa chỉ các trang mạng xã hội vào đây -->
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Ảnh và Video</h2>
+            </div>
+            <div class="section-content gallery">
+                <!-- Thêm ảnh và video đã được cập nhật -->
+                <button class="upload-btn">Thêm ảnh</button>
+            </div>
+            <div class="section-content video-container">
+                <!-- Thêm video đã được cập nhật -->
+                <button class="upload-btn">Thêm video</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Up sản phẩm số</h2>
+            </div>
+            <div class="section-content">
+                <form id="product-form">
+                    <label for="product-name">Tên sản phẩm:</label>
+                    <input type="text" id="product-name" name="product-name" required><br><br>
+                    
+                    <label for="product-description">Mô tả sản phẩm:</label><br>
+                    <textarea id="product-description" name="product-description" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <label for="product-price">Giá sản phẩm:</label>
+                    <input type="number" id="product-price" name="product-price" required><br><br>
+                    
+                    <label for="product-image">Hình ảnh sản phẩm:</label>
+                    <input type="file" id="product-image" name="product-image" accept="image/*" required><br><br>
+                    
+                    <button type="submit">Đăng sản phẩm</button>
+                </form>
+            </div>
+        <section>
+            <div class="section-title">
+                <h2>Quản lý ảnh và video</h2>
+            </div>
+            <div class="section-content">
+                <h3>Ảnh</h3>
+                <div class="gallery-management">
+                    <!-- Hiển thị tất cả các ảnh đã tải lên -->
+                </div>
+                <h3>Video</h3>
+                <div class="video-management">
+                    <!-- Hiển thị tất cả các video đã tải lên -->
+                </div>
+            </div>
+        </section>
+        <!-- Phần quản lý sản phẩm -->
+        <section>
+            <div class="section-title">
+                <h2>Quản lý sản phẩm</h2>
+            </div>
+            <div class="section-content">
+                <div class="product-management">
+                    <!-- Hiển thị tất cả các sản phẩm đã đăng -->
+                </div>
+            </div>
+        </section>
+        <!-- Phần quản lý quảng cáo -->
+        <section>
+            <div class="section-title">
+                <h2>Quản lý quảng cáo</h2>
+            </div>
+            <div class="section-content" id="adManagement">
+                <!-- Form để thêm quảng cáo mới -->
+                <h3>Thêm quảng cáo mới</h3>
+                <form id="addAdForm">
+                    <label for="adTitle">Tiêu đề:</label><br>
+                    <input type="text" id="adTitle" name="adTitle"><br><br>
+                    
+                    <label for="adContent">Nội dung:</label><br>
+                    <textarea id="adContent" name="adContent"></textarea><br><br>
+                    
+                    <label for="adImage">Hình ảnh:</label><br>
+                    <input type="file" id="adImage" name="adImage"><br><br>
+                    
+                    <button type="submit">Thêm quảng cáo</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 [Vu Thi Huong Lan]. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript để xử lý chức năng thêm quảng cáo -->
+    <script>
+        document.getElementById('addAdForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn việc gửi form đi
+
+            // Lấy thông tin từ form
+            let adTitle = document.getElementById('adTitle').value;
+            let adContent = document.getElementById('adContent').value;
+            let adImage = document.getElementById('adImage').value; // Đây là đường dẫn tới hình ảnh, bạn có thể lấy dữ liệu hình ảnh thật sự thông qua các phương thức xử lý hình ảnh hoặc lưu trữ trên máy chủ.
+
+            // Kiểm tra xem các trường thông tin có đầy đủ hay không
+            if (adTitle && adContent && adImage) {
+                // Tạo một thẻ div chứa thông tin quảng cáo
+                let adDiv = document.createElement('div');
+                adDiv.classList.add('advertisement');
+                adDiv.innerHTML = `
+                    <h3>${adTitle}</h3>
+                    <p>${adContent}</p>
+                    <img src="${adImage}" alt="Quảng cáo">
+                `;
+
+                // Thêm quảng cáo vào phần quản lý quảng cáo
+                let adManagement = document.getElementById('adManagement');
+                adManagement.appendChild(adDiv);
+
+                // Reset form
+                document.getElementById('addAdForm').reset();
+            } else {
+                alert('Vui lòng điền đầy đủ thông tin quảng cáo.');
+            }
+        });
+    </script>
+ <!-- Chèn nhạc nền -->
+    <audio controls autoplay loop>
+        <source src="path_to_your_audio_file.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+</body>
+</html>
